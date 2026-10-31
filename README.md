@@ -1,2 +1,2 @@
- # NOVA AI
-NOVA AI 
+ # NOVA GAMING.
+NOVA shop
