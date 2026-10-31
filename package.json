@@ -1,7 +1,7 @@
 {
-"name": "nova-ai",
+"name": "nova-ai-api",
 "version": "1.0.0",
-"description": "NOVA AI - Persian AI assistant platform",
+"description": "NOVA AI API",
 "main": "server.js",
 "scripts": {
 "start": "node server.js"
@@ -11,6 +11,7 @@
 },
 "dependencies": {
 "express": "^5.1.0",
-"openai": "^5.0.0"
+"openai": "^5.0.0",
+"cors": "^2.8.5"
 }
 }
