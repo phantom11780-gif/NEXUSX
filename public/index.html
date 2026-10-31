@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="NOVA AI؛ دستیار هوشمند برای گفتگو، ترجمه و تولید محتوا.">
+  <title>NOVA AI | دستیار هوشمند</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#">
+        <span class="brand-icon">✦</span>
+        <span>NOVA <b>AI</b></span>
+      </a>  <button class="new-chat" id="clear">＋ گفتگوی جدید</button>
+
+  <div class="side-label">ابزارهای هوشمند</div>
+
+  <button class="tool" data-prompt="یک متن حرفه‌ای درباره موضوع زیر بنویس: ">
+    ✍️ تولید محتوا
+  </button>
+
+  <button class="tool" data-prompt="متن زیر را به انگلیسی ترجمه کن: ">
+    🌐 ترجمه متن
+  </button>
+
+  <button class="tool" data-prompt="متن زیر را خلاصه کن و نکات اصلی را بنویس: ">
+    📄 خلاصه‌سازی
+  </button>
+
+  <button class="tool" data-prompt="برای موضوع زیر ایده‌های خلاقانه پیشنهاد بده: ">
+    💡 ایده‌پردازی
+  </button>
+
+  <div class="sidebar-bottom">
+    <span class="status-dot"></span>
+    <span>NOVA AI Assistant</span>
+  </div>
+</aside>
+
+<main class="main">
+  <header class="topbar">
+    <button class="mobile-brand" id="menu" aria-label="باز کردن منو">☰</button>
+    <span>فضای هوش مصنوعی</span>
+    <span class="badge">BETA</span>
+  </header>
+
+  <section class="workspace">
+    <div class="welcome" id="welcome">
+      <div class="hero-icon">✦</div>
+      <p class="eyebrow">نسل جدید دستیارهای هوشمند</p>
+
+      <h1>به <span>NOVA AI</span> خوش آمدی.</h1>
+
+      <p class="subtitle">
+        ایده‌هایت را به نتیجه تبدیل کن.
+        سؤال بپرس یا یکی از ابزارها را انتخاب کن.
+      </p>
+
+      <div class="suggestions">
+        <button class="suggestion" data-prompt="یک برنامه ۳۰ روزه برای یادگیری برنامه‌نویسی طراحی کن.">
+          <span>💻</span>
+          <b>یادگیری برنامه‌نویسی</b>
+          <small>یک مسیر یادگیری بساز</small>
+        </button>
+
+        <button class="suggestion" data-prompt="۵ ایده خلاقانه برای کسب‌وکار اینترنتی پیشنهاد بده.">
+          <span>🚀</span>
+          <b>ایده کسب‌وکار</b>
+          <small>ایده‌های تازه پیدا کن</small>
+        </button>
+
+        <button class="suggestion" data-prompt="یک متن تبلیغاتی حرفه‌ای برای معرفی محصول بنویس.">
+          <span>✍️</span>
+          <b>تولید محتوا</b>
+          <small>متن جذاب بنویس</small>
+        </button>
+
+        <button class="suggestion" data-prompt="هوش مصنوعی را ساده توضیح بده و چند مثال بزن.">
+          <span>🧠</span>
+          <b>یادگیری هوش مصنوعی</b>
+          <small>چیزهای جدید یاد بگیر</small>
+        </button>
+      </div>
+    </div>
+
+    <div class="messages" id="messages" aria-live="polite"></div>
+
+    <form class="composer" id="chat-form">
+      <textarea
+        id="prompt"
+        rows="1"
+        placeholder="هر چیزی که می‌خواهی بپرس..."
+        required
+      ></textarea>
+
+      <div class="composer-bottom">
+        <span>پاسخ‌های هوش مصنوعی ممکن است خطا داشته باشند.</span>
+        <button type="submit" id="send">
+          <span>ارسال</span> ↑
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <footer>ساخته‌شده با <span>✦</span> NOVA AI</footer>
+</main>
+
+  </div>  <script src="app.js"></script></body>
+</html>
