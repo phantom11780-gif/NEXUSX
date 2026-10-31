@@ -38,7 +38,7 @@ loading.textContent = "NOVA در حال فکر کردن است...";
 messages.appendChild(loading);
 
 try {
-const response = await fetch("/api/chat", {
+const response = await fetch("https://YOUR-API-URL.onrender.com/api/chat", {
 method: "POST",
 headers: {
 "Content-Type": "application/json"
